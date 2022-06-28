@@ -20,7 +20,7 @@ class StockRepositoryImpl @Inject constructor(
     private val db: StockDatabase,
     private val parser: CsvParser<CompanyListingModel>,
 ) : StockRepository {
-    private val dao = db.dao;
+    private val dao = db.dao
 
     override suspend fun getCompanyListings(
         fetchFromRemote: Boolean,
