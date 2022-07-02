@@ -6,7 +6,6 @@ import androidx.compose.runtime.Composable
 import androidx.compose.runtime.remember
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.*
-import androidx.compose.ui.graphics.drawscope.DrawStyle
 import androidx.compose.ui.graphics.drawscope.Stroke
 import androidx.compose.ui.platform.LocalDensity
 import androidx.compose.ui.unit.dp
@@ -17,8 +16,8 @@ import kotlin.math.roundToInt
 
 @Composable
 fun StockChart(
-    infos: List<IntradayInfo> = emptyList(),
     modifier: Modifier = Modifier,
+    infos: List<IntradayInfo> = emptyList(),
     graphColor: Color = Color.Green,
 ) {
     val spacing = 100f
